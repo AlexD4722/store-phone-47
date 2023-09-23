@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script async src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+            if (typeof grecaptcha === "undefined") {
+                grecaptcha = {};
+            }
+            grecaptcha.ready = function (cb) {
+                if (typeof grecaptcha === "undefined") {
+                    const c = "___grecaptcha_cfg";
+                    window[c] = window[c] || {};
+                    (window[c]["fns"] = window[c]["fns"] || []).push(cb);
+                } else {
+                    cb();
+                }
+            };
+
+            grecaptcha.ready(function () {
+                grecaptcha.render("container", {
+                    sitekey: "6Lcpy1wnAAAAAOLIfcBMheKEIUzwl-QNju9CW7SV",
+                });
+            });
+
+            function onSubmit(token) {
+                let fd = new FormData();
+                fd.append("secret", "6Lcpy1wnAAAAAMWEJTNpQxlWmceza_r_yenTmnwL");
+                fd.append("respsonse", grecaptcha.getResponse());
+                fetch("https://www.google.com/recaptcha/api/siteverify", {
+                    method: "post",
+                    mode: "cors",
+                    body: fd,
+                })
+                    .then((response) => {
+                        console.log(response);
+                        return response.text();
+                    })
+                    .then(
+                        (text) =>
+                            (document.querySelector("#result").innerText = text)
+                    );
+            }
+        </script>
+        <form id="demo-form">
+            Username:<input type="text" name="username" id="username" />
+            Password:<input type="text" name="password" id="password" />
+            <button
+                class="g-recaptcha"
+                data-sitekey="6Lcpy1wnAAAAAOLIfcBMheKEIUzwl-QNju9CW7SV"
+                data-callback="onSubmit"
+                data-action="submit"
+            >
+                Submit
+            </button>
+        </form>
+        <div id="result"></div>
+    </body>
+</html>

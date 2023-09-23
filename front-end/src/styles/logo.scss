@@ -1,0 +1,15 @@
+.logo-shop{
+    max-width: 171px;
+    display: inline-flex;
+    align-items: center;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    cursor: pointer;
+    @media all and (max-width: 900px) {
+        max-width: 135px;
+    }
+    
+}
+

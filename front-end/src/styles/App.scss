@@ -1,0 +1,7 @@
+@import './font.scss';
+@import './color.scss';
+.text{
+  color: var(--color-bs-blue);
+  font-family: "Pragmatica";
+  font-size: larger;
+}

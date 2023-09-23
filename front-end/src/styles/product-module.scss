@@ -1,0 +1,27 @@
+@import "./color.scss";
+@import "./font.scss";
+.products-module__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $color-theme-border;
+  padding-bottom: 0.9375rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+.products-module__title {
+  font-size: 1.25rem;
+}
+.products-module__link-more {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: .8125rem;
+    color: $color-link;
+    background-color: transparent;
+    border: 0;
+    height: auto;
+    padding-right: 0;
+    font-weight: 600;
+}

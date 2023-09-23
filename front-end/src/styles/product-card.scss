@@ -1,0 +1,197 @@
+@import "./font.scss";
+@import "./color.scss";
+.product-card__img-wrap {
+  padding: 0.9375rem;
+  margin-bottom: 0.625rem;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  &:hover {
+    .product-card__img-default {
+      width: 0;
+    }
+    .product-card__img-sub {
+      width: 100%;
+    }
+  }
+}
+.product-card {
+  position: relative;
+  &:hover {
+    box-shadow: 0 1px 30px rgba(62, 68, 90, 0.09);
+    border: 1px solid $color-product-fade-border;
+    border-bottom: 0px;
+    > .product-card__footer {
+      opacity: 1;
+      visibility: visible;
+      z-index: 6;
+    }
+    background-color: #fff;
+  }
+  border-radius: 5px 5px 0 0;
+}
+.product-card__img-default,
+.product-card__img-sub {
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+  transition: 0.3s;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+.product-card__img-sub {
+  width: 0;
+}
+.product-card__product-title {
+  text-transform: capitalize;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.07px;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-card__product-rating {
+  margin-bottom: 0.625rem;
+}
+.product-card__box-start-rating {
+  display: inline-flex;
+  gap: 2px;
+  i {
+    font-size: 0.8rem;
+    color: $color-bs-warning;
+  }
+}
+.product-card__main {
+  padding: 0 0.9375rem 0.9375rem 0.9375rem;
+  // margin-bottom: 0.625rem;
+}
+.product-card__count-rating {
+  font-weight: 400;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  margin-left: 0.625rem;
+}
+.product-card__product-price-cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+.product-card__price {
+  span {
+    display: block;
+  }
+}
+.product-card__price-old {
+  font-size: 90%;
+  font-family: $font-secondary;
+  color: rgb(154, 165, 179);
+  font-size: 14.3px;
+  font-weight: 400;
+  letter-spacing: -0.03px;
+  line-height: 21.45px;
+  text-decoration: line-through;
+}
+.product-card__price-new {
+  font-size: 1.375rem;
+  color: rgb(239, 38, 44);
+  height: auto;
+  letter-spacing: -0.03px;
+  line-height: 33px;
+}
+.product-card__btn-add-cart {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 229, 234);
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    background-color: #eff5f2;
+    border-color: #e4f0e9;
+  }
+  i {
+    font-size: 18px;
+    color: $color-shop-button;
+  }
+}
+.product-card__btn-add--status {
+  background-color: #eff5f2;
+  border-color: #e4f0e9;
+}
+.product-card__footer {
+  padding: 0 0.9375rem;
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s cubic-bezier(0.28, 0.12, 0.22, 1);
+  box-shadow: 0 1px 30px rgba(62, 68, 90, 0.09);
+  border: 1px solid #e0e5ea;
+  border-top: 0px;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+.product-footer-details {
+  border-top: 1px solid $color-product-fade-border;
+  transition: 0.3s;
+  padding: 0.5rem 0.9375rem 0 0.9375rem;
+  li {
+    display: list-item;
+    font-size: 0.75rem;
+  }
+}
+.product-card__box-wishlist {
+  position: absolute;
+  right: 0.9375rem;
+  top: 0.9375rem;
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  border: 1px solid $color-theme-border;
+  background-color: $color-background;
+  i {
+    transition: 0.5s;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+  }
+  &:hover {
+    color: red;
+    background-color: #fff3f3;
+    border-color: #ffd8d8;
+  }
+}
+.product-card__box-wishlist--status {
+  color: red;
+  border-color: #ffd8d8;
+}
+.product-card__box-wishlist {
+  .bi-heart-fill {
+    color: $color-bs-danger;
+    font-size: 15px;
+  }
+}

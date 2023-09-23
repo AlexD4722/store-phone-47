@@ -1,0 +1,116 @@
+@import "./color.scss";
+@import "./font.scss";
+.carousel-item {
+  position: relative;
+}
+.carousel-item__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  // @media all and (min-width: 62rem) {
+  //   position: relative;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: 5;
+  // }
+}
+.carousel-item__content {
+  position: relative;
+  z-index: 6;
+  position: relative;
+  width: 60%;
+  @media all  and (max-width: 62rem) and (max-width: 92rem){
+    width: 70%;
+  }
+  @media all and (max-width: 62rem) {
+    width: 100%;
+  }
+}
+.banner-content {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  padding-inline-end: 3.75rem;
+  height: 100%;
+  display: grid;
+  align-items: center;
+}
+.banner-content__entry-subtitle {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.625rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 1.4375rem;
+  background-color: $color-secondary;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  border-radius: 1.4375rem;
+}
+.banner-content__entry-title {
+  font-size: 1.75rem;
+  letter-spacing: -0.07px;
+  @media all and (min-width: 48rem) {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+  }
+  strong {
+    font-weight: 600;
+  }
+}
+.banner-content__entry-description {
+  font-family: $font-secondary;
+  font-size: 0.875rem;
+  font-weight: 300;
+  @media all and (min-width: 48rem) {
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+  }
+}
+.banner-content__wrapper {
+  @media all and (min-width: 62rem) {
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+  }
+}
+.banner-content__entry-button {
+  @media all and (min-width: 48rem) {
+    margin-top: 1.875rem;
+  }
+  button {
+    font-size: 0.75rem;
+    height: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: $color-bs-blue;
+    border-color: $color-bs-blue;
+    color: #fff;
+    border-radius: 3.4375rem !important;
+    @media all and (min-width: 48rem) {
+      font-size: 0.8125rem;
+      height: 2.375rem;
+      padding-left: 2.25rem;
+      padding-right: 2.25rem;
+      letter-spacing: -.03px;
+      font-weight: 600;
+    }
+  }
+}
+.carousel-control-prev, .carousel-control-next{
+    z-index: 1000;
+    color: #000;
+}
+.carousel-control-prev, .carousel-control-next{
+    z-index: 6;
+}

@@ -1,0 +1,31 @@
+@import "./color.scss";
+@import "./font.scss";
+.cart-page__box-btn-footer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.cart-page__btn-checkout {
+  display: inline-flex;
+  height: 3.125rem;
+  border: none;
+}
+.cart-page__btn-checkout-content {
+  padding-left: 1.8625rem;
+  padding-right: 1.8625rem;
+  font-family: $font-primary;
+  text-transform: capitalize;
+  font-size: 0.875rem;
+  letter-spacing: -0.03px;
+  font-weight: 600;
+  text-decoration: none;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  background-color: $color-primary;
+  color: #fff;
+  border-radius: 4px;
+}
+.checkout__input-fill--area{
+    min-height: 100px;
+}

@@ -1,0 +1,40 @@
+@import "./font.scss";
+@import "./color.scss";
+.pagination{
+    justify-content: center;
+    margin: 2rem 0;
+}
+.page-item{
+    a{
+        width: 34px;
+        height: 34px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $color-main-text;
+        font-size: .8125rem;
+        font-weight: 600;
+    }
+}
+.pagination{
+    gap: 5px;
+    .active{
+        .page-link{
+            width: 34px;
+            height: 34px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: .8125rem;
+            font-weight: 600;   
+        }
+    }
+}
+.pagination-active{
+    a{      
+        background-color: $color-bs-blue;
+        color: $color-background;
+    }
+}

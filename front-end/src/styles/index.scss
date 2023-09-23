@@ -1,0 +1,91 @@
+@import "./color.scss";
+@import "./font.scss";
+@import "./breadcrumb-item.scss";
+.xo-container {
+  position: relative;
+  max-width: 1400px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  font-family: $font-primary;
+  font-weight: 400;
+  letter-spacing: -0.03px;
+  color: $color-main-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+p,
+strong {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: $color-bs-dark;
+  cursor: pointer;
+}
+h1{
+  font-size: 2.8rem;
+  letter-spacing: -.03px;
+  @media all  and (max-width: 48rem){
+    font-size: 1.75rem;
+  }
+}
+h2{
+  font-size: 2.7rem;
+  letter-spacing: -.05px;
+  @media all  and (max-width: 48rem){
+    font-size: 1.65rem;
+  }
+}
+h3{
+  font-size: 2.5rem;
+  letter-spacing: -.07px;
+  @media all  and (max-width: 48rem){
+    font-size: 1.75rem;
+  }
+}
+h4{
+  font-size: 2.3rem;
+  letter-spacing: -.09px;
+  @media all  and (max-width: 48rem){
+    font-size: 1.55rem;
+  }
+}
+h5{
+  font-size: 2.1rem;
+  letter-spacing: -.07px;
+  @media all  and (max-width: 48rem){
+    font-size: 1.35rem;
+  }
+}
+h6{
+  font-size: 1rem;
+  letter-spacing: 1px;
+  @media all  and (max-width: 48rem){
+    font-size: 0.8rem;
+  }
+}
+.breadcrumb-item{
+  cursor: pointer;
+}
+.outlet{
+  min-height: 750px;
+}

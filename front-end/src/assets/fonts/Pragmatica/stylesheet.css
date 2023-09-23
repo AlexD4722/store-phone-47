@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('Pragmatica-BlackOblique.woff2') format('woff2'),
+        url('Pragmatica-BlackOblique.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('Pragmatica-Bold.woff2') format('woff2'),
+        url('Pragmatica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('Pragmatica-BoldOblique.woff2') format('woff2'),
+        url('Pragmatica-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('Pragmatica-BookOblique.woff2') format('woff2'),
+        url('Pragmatica-BookOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('Pragmatica-Book.woff2') format('woff2'),
+        url('Pragmatica-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('Pragmatica-Black.woff2') format('woff2'),
+        url('Pragmatica-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-BoldOblique.woff2') format('woff2'),
+        url('PragmaticaCond-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-BookOblique.woff2') format('woff2'),
+        url('PragmaticaCond-BookOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-Book.woff2') format('woff2'),
+        url('PragmaticaCond-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-BlackOblique.woff2') format('woff2'),
+        url('PragmaticaCond-BlackOblique.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-ExtraBoldOblique.woff2') format('woff2'),
+        url('PragmaticaCond-ExtraBoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-ExtraLight.woff2') format('woff2'),
+        url('PragmaticaCond-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-Bold.woff2') format('woff2'),
+        url('PragmaticaCond-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-Black.woff2') format('woff2'),
+        url('PragmaticaCond-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-ExtraBold.woff2') format('woff2'),
+        url('PragmaticaCond-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('PragmaticaExtended-Black.woff2') format('woff2'),
+        url('PragmaticaExtended-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-ExtraLightObliqu.woff2') format('woff2'),
+        url('PragmaticaCond-ExtraLightObliqu.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-Light.woff2') format('woff2'),
+        url('PragmaticaCond-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-LightOblique.woff2') format('woff2'),
+        url('PragmaticaCond-LightOblique.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-MediumOblique.woff2') format('woff2'),
+        url('PragmaticaCond-MediumOblique.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Cond';
+    src: url('PragmaticaCond-Medium.woff2') format('woff2'),
+        url('PragmaticaCond-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('PragmaticaExtended-BookOblique.woff2') format('woff2'),
+        url('PragmaticaExtended-BookOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('PragmaticaExtended-Bold.woff2') format('woff2'),
+        url('PragmaticaExtended-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('PragmaticaExtended-ExtraLightOb.woff2') format('woff2'),
+        url('PragmaticaExtended-ExtraLightOb.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('PragmaticaExtended-ExtraLight.woff2') format('woff2'),
+        url('PragmaticaExtended-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('PragmaticaExtended-BlackOblique.woff2') format('woff2'),
+        url('PragmaticaExtended-BlackOblique.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('PragmaticaExtended-BoldOblique.woff2') format('woff2'),
+        url('PragmaticaExtended-BoldOblique.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('PragmaticaExtended-ExtraBold.woff2') format('woff2'),
+        url('PragmaticaExtended-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('PragmaticaExtended-ExtraBoldObl.woff2') format('woff2'),
+        url('PragmaticaExtended-ExtraBoldObl.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pragmatica Extended';
+    src: url('PragmaticaExtended-Book.woff2') format('woff2'),
+        url('PragmaticaExtended-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
